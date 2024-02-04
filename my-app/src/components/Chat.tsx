@@ -3,17 +3,6 @@ export default function Chat() {
     <section className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 to-pink-400 dark:from-red-600 dark:to-red-800">
       <div className="flex justify-center items-center w-full h-full">
         <div className="w-1/4">
-          <img
-            alt="Placeholder Image"
-            className="object-cover w-full h-full rounded-lg"
-            height="500"
-            src="/placeholder.svg"
-            style={{
-              aspectRatio: "500/500",
-              objectFit: "cover",
-            }}
-            width="500"
-          />
         </div>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg transform">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-pink-500 dark:text-yellow-300 mb-6">
@@ -61,17 +50,6 @@ export default function Chat() {
           </div>
         </div>
         <div className="w-1/4">
-          <img
-            alt="Placeholder Image"
-            className="object-cover w-full h-full rounded-lg"
-            height="500"
-            src="/placeholder.svg"
-            style={{
-              aspectRatio: "500/500",
-              objectFit: "cover",
-            }}
-            width="500"
-          />
         </div>
       </div>
     </section>
