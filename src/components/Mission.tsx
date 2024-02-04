@@ -22,27 +22,32 @@ const Mission: React.FC = () => {
     <div className="h-screen bg-pink-200">
       <div className="px-4 py-12 h-full">
         <h3 className="font-bold tracking-tighter text-pink-700 dark:text-violet-200 sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
-          About Us:
+          Information:
         </h3>
-        <Question title="Who are we?" isOpen={openQuestion === 0} onToggle={() => handleQuestionToggle(0)}>
+        <Question title="What is ELLIS?" isOpen={openQuestion === 0} onToggle={() => handleQuestionToggle(0)}>
           <p>
-            We are both sophomores studying at Virginia Tech! Our motivation for this project comes from the fact that we are both first-generation students, and children of South Korean immigrants.
+            ELLIS is a web application that we developed using React Native, TypeScript, and Tailwind CSS, that provides legal and cultural differences between the user's home country and the United States, and can translate the differences into their native language. Click on "Try now" to try it yourself!
+            <br /><br />
+            ELLIS also contains a list of general legal and cultural resources that can provide useful information about the transition to the states. Click on "Resources" to check them out!
           </p>
         </Question>
-        <Question title="What is the purpose of ELLIS?" isOpen={openQuestion === 1} onToggle={() => handleQuestionToggle(1)}>
+        <Question title="Personal relevance" isOpen={openQuestion === 1} onToggle={() => handleQuestionToggle(1)}>
+          <p>
+            Our motivation for this project comes from the fact that we are both first-generation students, and children of South Korean immigrants.
+          </p>
+        </Question>
+        <Question title="What is our goal?" isOpen={openQuestion === 2} onToggle={() => handleQuestionToggle(2)}>
           <p>
             As first-generation students, we have seen the struggles of those moving into the United States without any prior knowledge of the country. However, we noticed that it was often more difficult for female immigrants to transition to the United States as women's rights and gender culture is often a source of controversy no matter the country, and can vary severely depending on the country you are from.
             <br /><br />
             While we wanted to provide a platform where an immigrant of any gender can learn about the culture, language, and legal aspects of the United States, we wanted to provide an emphasis on the struggles and experiences specific to women making the transition to the states.
           </p>
         </Question>
-        <Question title="What are our future goals?" isOpen={openQuestion === 2} onToggle={() => handleQuestionToggle(2)}>
+        <Question title="What's next for ELLIS?" isOpen={openQuestion === 3} onToggle={() => handleQuestionToggle(3)}>
           <p>
-          </p>
-        </Question>
-        <Question title="Hi, how are you?" isOpen={openQuestion === 3} onToggle={() => handleQuestionToggle(3)}>
-          <p>
-            I'm good, thanks.
+            ELLIS is a proof of concept of something that could be much more extensive. We would like to expand the application to include more countries and languages, and to provide more detailed information about the legal and cultural differences between the United States and the user's home country, with a more natural translation.
+            <br /><br />
+            As of now, ELLIS is powered by the OpenAI API, so translations and responses may not be 100% accurate or detailed. Eventually we would want to stray away from the OpenAI API and use actual translations and responses from native speakers and legal professionals, as a part of expanding the documentation. 
           </p>
         </Question>
       </div>
