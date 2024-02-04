@@ -8,7 +8,7 @@ export default function Component() {
         <div className="container px-4 md:px-6 flex flex-col items-center space-y-4 text-center -mt-[50vh]">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter text-pink-700 dark:text-violet-200 sm:text-4xl md:text-5xl lg:text-6xl/none">
-              WelcomeHER
+              Welcome to ELLIS!
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
               Moving from another country? Figure out what you need to know.
