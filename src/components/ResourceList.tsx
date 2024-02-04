@@ -58,7 +58,7 @@ const Questions = ({ selected }: { selected: string }) => {
   );
 };
 
-const Question = ({ question, answer }: QuestionType) => {
+const Question = ({ question, answer, answer2 }: QuestionType) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -76,6 +76,7 @@ const Question = ({ question, answer }: QuestionType) => {
       </button>
       <div style={{ height: open ? "fit-content" : "0px", marginBottom: open ? "24px" : "0px" }} className="overflow-hidden text-gray-700">
         <p>{answer}</p>
+        <p>{answer2}</p>
       </div>
     </div>
   );
@@ -84,6 +85,7 @@ const Question = ({ question, answer }: QuestionType) => {
 type QuestionType = {
   question: string;
   answer: React.ReactNode;
+  answer2: React.ReactNode;
 };
 
 const TABS = ["Legal", "Cultural", "Community"];
@@ -92,55 +94,67 @@ const QUESTIONS = {
   "Legal": [
     {
       question: "Women's Rights",
-      answer: <a href="https://www.unwomen.org/en" target="_blank" rel="noopener noreferrer">UN Women</a>,
+      answer: <a href="https://www.dol.gov/agencies/wb/federal-agency-resources" target="_blank" rel="noopener noreferrer">Federal resources for women</a>,
+      answer2: <a href="https://www.gao.gov/women-and-gender-public-policy" target="_blank" rel="noopener noreferrer">Women and gender in public policy</a>,
     },
     {
       question: "Property Rights",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.law.cornell.edu/wex/table_property" target="_blank" rel="noopener noreferrer">Property rights by state</a>,
+      answer2: <a href="https://www.divorcenet.com/states/nationwide/property_division_by_state" target="_blank" rel="noopener noreferrer">Propert divisons by state</a>,
     },
     {
       question: "Immigration Laws",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "Employment Laws",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
   ],
   "Cultural": [
     {
       question: "Gender Culture",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "Social Culture",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "Work Culture",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "Education Culture",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
   ],
   "Community": [
     {
       question: "For Women",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "For Immigrants",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "For First-Generation Students",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
       question: "How can I find local communities?",
       answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
   ]
 };
