@@ -60,10 +60,9 @@ const NavLeft = ({
         <FiMenu />
      </motion.button>
      <Link to="/"><Logo /></Link>
-      <Link to="/aboutus">About Us</Link>
-      <Link to="/legal">Legal</Link>
-      <Link to="/culture">Culture</Link>
-      <Link to="/community">Community</Link>
+      <Link to="/legal">Legal Resources</Link>
+      <Link to="/culture">Cultural Resources</Link>
+      <Link to="/community">Communities</Link>
       <Link to="/service"><button
 className="inline-flex h-9 items-center justify-center rounded-md bg-pink-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-pink-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pink-700 disabled:pointer-events-none disabled:opacity-50 dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus-visible:ring-violet-600">
         Try now

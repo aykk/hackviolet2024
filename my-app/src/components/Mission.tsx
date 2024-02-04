@@ -2,37 +2,46 @@ import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 
-const Mission = () => {
+interface QuestionProps {
+  title: string;
+  children: JSX.Element;
+  isOpen: boolean;
+  onToggle: () => void;
+}
+
+const Mission: React.FC = () => {
+  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
+
+  const handleQuestionToggle = (questionIndex: number) => {
+    setOpenQuestion((prevIndex) => (prevIndex === questionIndex ? null : questionIndex));
+  };
+
   return (
     <div className="h-screen bg-pink-200">
       <div className="px-4 py-12 h-full">
         <h3 className="font-bold tracking-tighter text-pink-700 dark:text-violet-200 sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
-          Frequently asked questions
+          About Us:
         </h3>
-        <Question title="Who are we?" defaultOpen>
+        <Question title="Who are we?" isOpen={openQuestion === 0} onToggle={() => handleQuestionToggle(0)}>
           <p>
-            ELLIS is a project developed by Andrew Kim and Leo Kim. We are both sophomores studying at Virginia Tech! Our motivation for this project comes from the fact that we are both first-generation students, and children of South Korean immigrants.
+            We are both sophomores studying at Virginia Tech! Our motivation for this project comes from the fact that we are both first-generation students, and children of South Korean immigrants.
           </p>
         </Question>
-        <Question title="What is the purpose of ELLIS?">
+        <Question title="What is the purpose of ELLIS?" isOpen={openQuestion === 1} onToggle={() => handleQuestionToggle(1)}>
           <p>
             As first-generation students, we have seen the struggles of those moving into the United States without any prior knowledge of the country. However, we noticed that it was often more difficult for female immigrants to transition to the United States as women's rights and gender culture is often a source of controversy no matter the country, and can vary severely depending on the country you are from.
-             <br /><br />
-            While we wanted to provide a platform where an immigrant of any gender can learn about the culture, language, and legal aspects of the United States, we wanted to provide and emphasis on the details, struggles, and differences specific to women making the transition to the states.
+            <br /><br />
+            While we wanted to provide a platform where an immigrant of any gender can learn about the culture, language, and legal aspects of the United States, we wanted to provide an emphasis on the struggles and experiences specific to women making the transition to the states.
           </p>
         </Question>
-        <Question title="What are our future goals?">
+        <Question title="What are our future goals?" isOpen={openQuestion === 2} onToggle={() => handleQuestionToggle(2)}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+            This website is a proof of concept of something that could be much larger. We hope to expand this website to be more consistent, use translations that are more natural, show local support communities depending on the user's zipcode, and provide more specific legal differences depending on the state you are in. Furthermore, cultural differences are very subjective so we are trying to find a way to explain these differences in a more user-friendly way. As of now, this project is powered by the OpenAI API, so the responses are more general and may not be 100% accurate.
           </p>
         </Question>
-        <Question title="Hi, how are you?">
+        <Question title="Hi, how are you?" isOpen={openQuestion === 3} onToggle={() => handleQuestionToggle(3)}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-            perspiciatis ad vero.
+            I'm good, thanks.
           </p>
         </Question>
       </div>
@@ -40,24 +49,14 @@ const Mission = () => {
   );
 };
 
-const Question = ({
-  title,
-  children,
-  defaultOpen = false,
-}: {
-  title: string;
-  children: JSX.Element;
-  defaultOpen?: boolean;
-}) => {
-  const [open, setOpen] = useState(defaultOpen);
-
+const Question: React.FC<QuestionProps> = ({ title, children, isOpen, onToggle }) => {
   return (
     <motion.div
-      animate={open ? "open" : "closed"}
+      animate={isOpen ? "open" : "closed"}
       className="border-b-[1px] border-pink-500 mb-8"
     >
       <button
-        onClick={() => setOpen((pv) => !pv)}
+        onClick={onToggle}
         className="flex w-full items-center justify-between gap-4 py-6"
       >
         <motion.span
@@ -79,8 +78,8 @@ const Question = ({
       <motion.div
         initial={false}
         animate={{
-          height: open ? "fit-content" : "0px",
-          marginBottom: open ? "24px" : "0px",
+          height: isOpen ? "fit-content" : "0px",
+          marginBottom: isOpen ? "24px" : "0px",
         }}
         className="overflow-hidden text-slate-700"
       >
