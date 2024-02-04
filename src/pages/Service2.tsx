@@ -192,17 +192,17 @@ const Service2 = () => {
       <ResponseContainer>
       <LeftContainer>
       <h1 style={{ fontWeight: 'bold', fontSize: '24px' }}>Legal Differences ⚖️</h1>
-        <ResponseItem>- {openAIResponseWR}</ResponseItem>
-        <ResponseItem>- {openAIResponseIM}</ResponseItem>
-        <ResponseItem>- {openAIResponseEM}</ResponseItem>
-        <ResponseItem>- {openAIResponseGN}</ResponseItem>
+        <ResponseItem>» {openAIResponseWR}</ResponseItem>
+        <ResponseItem>» {openAIResponseIM}</ResponseItem>
+        <ResponseItem>» {openAIResponseEM}</ResponseItem>
+        <ResponseItem>» {openAIResponseGN}</ResponseItem>
       </LeftContainer>
       <RightContainer>
       <h1 style={{ fontWeight: 'bold', fontSize: '24px' }}>Cultural Differences 👥</h1>
-        <ResponseItem>- {openAIResponseGR}</ResponseItem>
-        <ResponseItem>- {openAIResponseFM}</ResponseItem>
-        <ResponseItem>- {openAIResponseWK}</ResponseItem>
-        <ResponseItem>- {openAIResponseSC}</ResponseItem>
+        <ResponseItem>» {openAIResponseGR}</ResponseItem>
+        <ResponseItem>» {openAIResponseFM}</ResponseItem>
+        <ResponseItem>» {openAIResponseWK}</ResponseItem>
+        <ResponseItem>» {openAIResponseSC}</ResponseItem>
       </RightContainer>
       </ResponseContainer>
       </Container>
