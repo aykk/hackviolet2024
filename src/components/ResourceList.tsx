@@ -104,25 +104,25 @@ const QUESTIONS = {
     },
     {
       question: "Immigration Laws",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.ilrc.org/state-map-immigration-enforcement" target="_blank" rel="noopener noreferrer">Immigration laws by state</a>,
+      answer2: <a href="https://www.dss.virginia.gov/community/ona/immigrant_services/websites_and_resources.cgi" target="_blank" rel="noopener noreferrer">Immigration websites and resources</a>,
     },
     {
       question: "Employment Laws",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.dol.gov/agencies/whd/state" target="_blank" rel="noopener noreferrer">Labor laws by state</a>,
+      answer2: <a href="https://www.nilc.org/issues/workersrights/" target="_blank" rel="noopener noreferrer">Immigrant worker resources</a>,
     },
   ],
   "Cultural": [
     {
       question: "Gender Culture",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity/what-are-gender-roles-and-stereotypes" target="_blank" rel="noopener noreferrer">Gender roles and stereotypes in the US</a>,
+      answer2: <a href="https://unitedwaynca.org/blog/gender-norms/" target="_blank" rel="noopener noreferrer">Gender norms in the US</a>,
     },
     {
       question: "Social Culture",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.state.gov/courses/answeringdifficultquestions/html/app.htm?p=module2_p2.htm" target="_blank" rel="noopener noreferrer">American social values</a>,
+      answer2: <a href="https://www.state.gov/courses/answeringdifficultquestions/html/app.htm?p=module1_p1.htm" target="_blank" rel="noopener noreferrer">Guide to American social norms</a>,
     },
     {
       question: "Work Culture",
