@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
+import OpenAIResponse from '../Response';
+
 
 interface QuestionProps {
   title: string;
@@ -36,7 +38,7 @@ const Mission: React.FC = () => {
         </Question>
         <Question title="What are our future goals?" isOpen={openQuestion === 2} onToggle={() => handleQuestionToggle(2)}>
           <p>
-            This website is a proof of concept of something that could be much larger. We hope to expand this website to be more consistent, use translations that are more natural, show local support communities depending on the user's zipcode, and provide more specific legal differences depending on the state you are in. Furthermore, cultural differences are very subjective so we are trying to find a way to explain these differences in a more user-friendly way. As of now, this project is powered by the OpenAI API, so the responses are more general and may not be 100% accurate.
+            {openAIResponse}
           </p>
         </Question>
         <Question title="Hi, how are you?" isOpen={openQuestion === 3} onToggle={() => handleQuestionToggle(3)}>
