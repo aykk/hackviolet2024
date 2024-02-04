@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import OpenAIResponse from '../Response';
-import { useLocation } from 'react-router-dom'; 
+import { useLocation } from 'react-router-dom';
 
 
 const Service2 = () => {
@@ -144,34 +144,34 @@ const Service2 = () => {
       <Navbar />
       <h1>Legal!</h1>
 
-        <h2>
-          {openAIResponseWR}
-        </h2>
-        <h2>
-          {openAIResponseIM}
-        </h2>
-        <h2>
-          {openAIResponseEM}
-        </h2>
-        <h2>
-          {openAIResponseGN}
-        </h2>
+      <h2>
+        {openAIResponseWR}
+      </h2>
+      <h2>
+        {openAIResponseIM}
+      </h2>
+      <h2>
+        {openAIResponseEM}
+      </h2>
+      <h2>
+        {openAIResponseGN}
+      </h2>
 
 
 
-        <h1>Cultural!</h1>
-        <h2>
-          {openAIResponseGR}
-        </h2>
-        <h2>
-          {openAIResponseFM}
-        </h2>
-        <h2>
-          {openAIResponseWK}
-        </h2>
-        <h2>
-          {openAIResponseSC}
-        </h2>
+      <h1>Cultural!</h1>
+      <h2>
+        {openAIResponseGR}
+      </h2>
+      <h2>
+        {openAIResponseFM}
+      </h2>
+      <h2>
+        {openAIResponseWK}
+      </h2>
+      <h2>
+        {openAIResponseSC}
+      </h2>
     </div>
   );
 };

@@ -18,7 +18,7 @@ const Chat = () => {
   };
 
   return (
-    <section className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 to-pink-400 dark:from-red-600 dark:to-red-800">
+    <section className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 to-pink-400 dark:from-red-600 dark:to-red-800 -mt-14">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg transform">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-pink-500 dark:text-yellow-300 mb-6">
           Welcome to ELLIS!
@@ -27,7 +27,7 @@ const Chat = () => {
           Please answer these simple questions to get started!
         </p>
         <div className="mt-4 w-full">
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" htmlFor="country">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3" htmlFor="country">
             What country are you moving from?
           </label>
           <input
@@ -40,7 +40,7 @@ const Chat = () => {
           />
         </div>
         <div className="mt-6 w-full">
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" htmlFor="language">
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3" htmlFor="language">
             What language do you prefer?
           </label>
           <input

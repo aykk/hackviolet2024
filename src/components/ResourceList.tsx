@@ -16,10 +16,7 @@ export const ResourceList = () => {
 const Heading = () => {
   return (
     <div className="relative z-10 flex flex-col items-center justify-center">
-      <span className="mb-8 bg-gradient-to-r from-violet-500 to-indigo-500 bg-clip-text font-medium text-transparent">
-        Let's answer some questions
-      </span>
-      <span className="mb-8 text-5xl font-bold">FAQs</span>
+      <span className="mb-8 text-5xl font-bold text-[#db2877]">Resources</span>
     </div>
   );
 };
@@ -36,13 +33,9 @@ const Tabs = ({
       {TABS.map((tab) => (
         <button
           onClick={() => setSelected(tab)}
-          className={`whitespace-nowrap rounded-md border-[1px] px-3 py-1.5 text-sm font-medium ${selected === tab
-            ? "border-violet-500 text-gray-700 bg-pink-300"
-            : "border-gray-600 bg-transparent text-gray-700"
-            }`}
-          key={tab}
+          className="inline-flex h-9 items-center justify-center rounded-md bg-pink-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-pink-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pink-700 disabled:pointer-events-none disabled:opacity-50"
         >
-          <span>{tab}</span>
+          {tab}
         </button>
       ))}
     </div>
@@ -90,84 +83,66 @@ const Question = ({ question, answer }: QuestionType) => {
 
 type QuestionType = {
   question: string;
-  answer: string;
+  answer: React.ReactNode;
 };
 
-const TABS = ["Web dev", "Mobile dev", "UI/UX", "Copywriting"];
+const TABS = ["Legal", "Cultural", "Community"];
 
 const QUESTIONS = {
-  "Web dev": [
+  "Legal": [
     {
-      question: "What is web development?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Women's Rights",
+      answer: <a href="https://www.unwomen.org/en" target="_blank" rel="noopener noreferrer">UN Women</a>,
     },
     {
-      question: "How do I know if I need it?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Property Rights",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
-      question: "What does it cost?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Immigration Laws",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
-      question: "What about SEO?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-  ],
-  "Mobile dev": [
-    {
-      question: "What is mobile development?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-    {
-      question: "Can you do both iOS and Android?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-    {
-      question: "Can you help with app store optimization?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-    {
-      question: "How long does it take?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Employment Laws",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
   ],
-  "UI/UX": [
+  "Cultural": [
     {
-      question: "What is UI/UX?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Gender Culture",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
-      question: "Can you audit my existing site?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Social Culture",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
-      question: "How do you perform research?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Work Culture",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
     {
-      question: "Does it make sense for my company?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-  ],
-  Copywriting: [
-    {
-      question: "What is copywriting?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-    {
-      question: "Can you write my blog?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-    {
-      question: "Can you also help with ad design?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
-    },
-    {
-      question: "How much does it cost?",
-      answer: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+      question: "Education Culture",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
     },
   ],
+  "Community": [
+    {
+      question: "For Women",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+    },
+    {
+      question: "For Immigrants",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+    },
+    {
+      question: "For First-Generation Students",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+    },
+    {
+      question: "How can I find local communities?",
+      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+    },
+  ]
 };
 
 export default ResourceList;
