@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Chat() {
   return (
     <section className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 to-pink-400 dark:from-red-600 dark:to-red-800">
@@ -42,11 +44,13 @@ export default function Chat() {
             </select>
           </div>
           <div className="mt-8 flex justify-center">
-            <button
-              className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600 dark:bg-yellow-300 dark:hover:bg-yellow-400"
-            >
-              Go!
-            </button>
+            <Link to="/response">
+              <button
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-pink-500 hover:bg-pink-600 dark:bg-yellow-300 dark:hover:bg-yellow-400"
+              >
+                Go!
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-1/4">

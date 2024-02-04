@@ -14,14 +14,14 @@ const FlipNavWrapper = () => {
 };
 
 const FlipNav = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-      <nav className="bg-pink-200 p-4 border-gray-200 flex items-center justify-center relative">
-        <NavLeft setIsOpen={setIsOpen} />
-        <NavMenu isOpen={isOpen} />
-      </nav>
-    );
-  };  
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <nav className="bg-pink-200 p-4 border-gray-200 flex items-center justify-center relative">
+      <NavLeft setIsOpen={setIsOpen} />
+      <NavMenu isOpen={isOpen} />
+    </nav>
+  );
+};
 
 const NavLeft = ({
   setIsOpen,
@@ -36,10 +36,10 @@ const NavLeft = ({
         onClick={() => setIsOpen((pv) => !pv)}
       >
         <FiMenu />
-     </motion.button>
-     <Link to="/">
-        <BsGlobe2 size="30" color="#db2877"/>
-     </Link>
+      </motion.button>
+      <Link to="/">
+        <BsGlobe2 size="30" color="#db2877" />
+      </Link>
       <Link to="/legal">Legal Resources</Link>
       <Link to="/culture">Cultural Resources</Link>
       <Link to="/community">Communities</Link>
