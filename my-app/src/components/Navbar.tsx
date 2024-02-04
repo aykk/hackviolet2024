@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 const FlipNavWrapper = () => {
   return (
@@ -59,7 +60,7 @@ const NavLeft = ({
         <FiMenu />
      </motion.button>
       <Logo />
-      <NavLink text="welcomeHER" />
+      <NavLink text="About Us" />
       <NavLink text="Legal" />
       <NavLink text="Culture" />
       <NavLink text="Community" />
@@ -92,10 +93,10 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4 items-center"
     >
-      <MenuLink text="Solutions" />
+      <MenuLink text="About Us" />
+      <MenuLink text="Legal" />
+      <MenuLink text="Culture" />
       <MenuLink text="Community" />
-      <MenuLink text="Pricing" />
-      <MenuLink text="Company" />
     </motion.div>
   );
 };
