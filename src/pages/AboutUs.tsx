@@ -3,7 +3,7 @@ import Team from '../components/Team';
 
 function AboutUs() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#fbcfe8', minHeight: '100vh' }}>
       <Navbar />
       <Team />
     </div>

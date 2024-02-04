@@ -185,7 +185,7 @@ const Service2 = () => {
   }, [location.state]);
 
   return (
-    <div>
+    <div style={{ backgroundColor: '#fbcfe8', minHeight: '100vh' }}>
       <MyComponent>
       <Container>
       <Navbar />

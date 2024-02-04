@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 
 function Home() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#fbcfe8', minHeight: '100vh' }}>
       <Navbar />
         <main>
             <Hero />

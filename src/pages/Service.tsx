@@ -3,7 +3,7 @@ import Chat from '../components/Chat';
 
 function Service() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#fbcfe8', minHeight: '100vh' }}>
       <Navbar />
       <Chat />
     </div>
