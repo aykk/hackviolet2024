@@ -1,6 +1,6 @@
 import React from 'react';
-import image from './images/bg.png';
-import footer from './images/footer.png';
+import image from './assets/bg.png';
+import footer from './assets/footer.png';
 
 const Component: React.FC = () => {
   const handleScrollDown = () => {
@@ -13,7 +13,7 @@ const Component: React.FC = () => {
         src={footer}
         alt="border"
         className="absolute bottom-40 left-0 object-cover"
-        style={{ opacity: 0.75 }}
+        style={{ opacity: 0.8 }}
       />
       <div className="container px-4 md:px-6 flex flex-col items-center space-y-4 text-center -mt-[60vh] relative z-10">
         <div className="space-y-5">
@@ -21,7 +21,7 @@ const Component: React.FC = () => {
             Welcome to ELLIS!
           </h1>
           <p className="mx-auto max-w-[700px] text-gray-700 md:text-xl">
-            Moving from another country as a female immigrant? Figure out what you need to know.
+            Moving from another country as an immigrant? Figure out what you need to know.
           </p>
         </div>
         <div className="space-x-4">

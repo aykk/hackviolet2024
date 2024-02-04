@@ -29,7 +29,7 @@ const NavLeft = ({
   setIsOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-6 space-x-4"> {/* Added space-x-4 for horizontal spacing */}
       <motion.button
         whileTap={{ scale: 0.95 }}
         className="block lg:hidden text-gray-950 text-2xl"
@@ -38,7 +38,7 @@ const NavLeft = ({
         <FiMenu />
       </motion.button>
       <Link to="/">
-        <BsGlobe2 size="30" color="#db2877" />
+        <BsGlobe2 size="40" color="#db2877" />
       </Link>
       <Link to="/aboutus">About Us</Link>
       <Link to="/resources">Resources</Link>
