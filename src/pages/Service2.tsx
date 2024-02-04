@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import styled from 'styled-components';
 import OpenAIResponse from '../Response';
-import { useLocation } from 'react-router-dom'; 
+import { useLocation } from 'react-router-dom';
 
 const MyComponent = styled.div`
   color: #4A5568;

@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
-// import OpenAIResponse from '../Response';
-
 
 interface QuestionProps {
   title: string;
@@ -29,6 +27,8 @@ const Mission: React.FC = () => {
             ELLIS is a web application that we developed using React Native, TypeScript, and Tailwind CSS, that provides legal and cultural differences between the user's home country and the United States, and can translate the differences into their native language. Click on "Try now" to try it yourself!
             <br /><br />
             ELLIS also contains a list of general legal and cultural resources that can provide useful information about the transition to the states. Click on "Resources" to check them out!
+            <br /><br />
+            The name ELLIS originates from Ellis Island, which was the busiest immigrant processing station in United State history. It is now a symbol of the American Dream! 
           </p>
         </Question>
         <Question title="Personal relevance" isOpen={openQuestion === 1} onToggle={() => handleQuestionToggle(1)}>
