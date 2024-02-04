@@ -100,7 +100,7 @@ const QUESTIONS = {
     {
       question: "Property Rights",
       answer: <a href="https://www.law.cornell.edu/wex/table_property" target="_blank" rel="noopener noreferrer">Property rights by state</a>,
-      answer2: <a href="https://www.divorcenet.com/states/nationwide/property_division_by_state" target="_blank" rel="noopener noreferrer">Property divisons by state</a>,
+      answer2: <a href="https://www.divorcenet.com/states/nationwide/property_division_by_state" target="_blank" rel="noopener noreferrer">Property divisions by state</a>,
     },
     {
       question: "Immigration Laws",
