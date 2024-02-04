@@ -126,35 +126,35 @@ const QUESTIONS = {
     },
     {
       question: "Work Culture",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjHwoWEopGEAxURbzABHdLOCJgQFnoECBgQAQ&url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fbooks%2FNBK542168%2F&usg=AOvVaw0wltsY3GUx7XYmYijeBdG_&opi=89978449" target="_blank" rel="noopener noreferrer">Work Culture</a>,
+      answer2: <a href="https://www.dol.gov/agencies/ofccp/manual/fccm/4g-site-review/4g01-corporate-culture" target="_blank" rel="noopener noreferrer">Corporate Culture</a>,
     },
     {
       question: "Education Culture",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.usa.gov/education" target="_blank" rel="noopener noreferrer">Education Culture</a>,
+      answer2: <a href="https://gw.usmission.gov/education-culture/study-usa/" target="_blank" rel="noopener noreferrer">Study in the USA</a>,
     },
   ],
   "Community": [
     {
       question: "For Women",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiun4fVopGEAxV3SzABHXBcBooQFnoECBcQAQ&url=https%3A%2F%2Fstepintoblacksburg.org%2Flisting%2Fwomens-resource-center-of-the-new-river-valley%2F&usg=AOvVaw2fiRcKlfv_QQ54RAbwkdOb&opi=89978449" target="_blank" rel="noopener noreferrer">New River Valley Women's resource center</a>,
+      answer2: <a href="https://www.womenscenter.vt.edu/" target="_blank" rel="noopener noreferrer">Women Center at VT</a>,
     },
     {
       question: "For Immigrants",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.findhelp.org/legal/citizenship-%26-immigration--blacksburg-va" target="_blank" rel="noopener noreferrer">Help immigration for Blacksburg</a>,
+      answer2: <a href="https://liberalarts.vt.edu/research-centers/center-for-refugee-migrant-and-displacement-studies.html" target="_blank" rel="noopener noreferrer">Center for Refugee, Migrant, and Displacement</a>,
     },
     {
       question: "For First-Generation Students",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://www.vt.edu/admissions/first-generation-students.html" target="_blank" rel="noopener noreferrer">VT first gen student</a>,
+      answer2: <a href="https://www.ncbi.nlm.nih.gov/books/NBK230365/" target="_blank" rel="noopener noreferrer">Children in Immigrant Families</a>,
     },
     {
       question: "How can I find local communities?",
-      answer: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
-      answer2: <a href="" target="_blank" rel="noopener noreferrer">link</a>,
+      answer: <a href="https://stepintoblacksburg.org/our-community/neighborhoods/" target="_blank" rel="noopener noreferrer">Step into Blacksburg</a>,
+      answer2: <a href="https://www.blacksburg.gov/departments/departments-a-k/housing-and-neighborhood-services" target="_blank" rel="noopener noreferrer"> Housing and community connections</a>,
     },
   ]
 };
