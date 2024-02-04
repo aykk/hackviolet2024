@@ -5,7 +5,7 @@ class OpenAIResponse {
 
   async fetchData(prompt: string): Promise<void> {
     try {
-      const apiKey = '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';
+      const apiKey = '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';
       const openAIEndpoint = 'https://api.openai.com/v1/chat/completions';
 
       const response = await axios.post(
