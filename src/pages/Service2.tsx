@@ -94,7 +94,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States specifically in employee and employers laws as well as career opportunities, translated to the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States specifically in employee and employers laws as well as career opportunities, translated to the language of ${location.state.language} and only this language, please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
@@ -108,7 +108,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States in terms of the most important legal codes and laws, translated to the language of  ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States in terms of the most important legal codes and laws, translated to the language of  ${location.state.language} and only this language, please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
@@ -122,7 +122,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States in terms of the topic of gender in a social context, translated to the the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States in terms of the topic of gender in a social context, translated to the the language of ${location.state.language} and only this language, please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
@@ -136,7 +136,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States in terms of family in a social context, translated to the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States in terms of family in a social context, translated to the language of ${location.state.language} and only this language, please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
@@ -150,7 +150,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States in terms of work in a social context, translated to the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States in terms of work in a social context, translated to the language of ${location.state.language} and only this language, please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
@@ -164,7 +164,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States in terms of the most jarring social and cultural differences, translated to the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States in terms of the most jarring social and cultural differences, translated to the language of ${location.state.language} and only this language, please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
