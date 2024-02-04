@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { BsGlobe2 } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
 const FlipNavWrapper = () => {
@@ -22,29 +23,6 @@ const FlipNav = () => {
     );
   };  
 
-const Logo = () => {
-  // Temp logo from https://logoipsum.com/
-  return (
-    <svg
-      width="50"
-      height="39"
-      viewBox="0 0 50 39"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="fill-gray-800"
-    >
-      <path
-        d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z"
-        stopColor="#000000"
-      ></path>
-      <path
-        d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
-        stopColor="#000000"
-      ></path>
-    </svg>
-  );
-};
-
 const NavLeft = ({
   setIsOpen,
 }: {
@@ -59,14 +37,19 @@ const NavLeft = ({
       >
         <FiMenu />
      </motion.button>
-     <Link to="/"><Logo /></Link>
+     <Link to="/">
+        <BsGlobe2 size="30" color="#db2877"/>
+     </Link>
       <Link to="/legal">Legal Resources</Link>
       <Link to="/culture">Cultural Resources</Link>
       <Link to="/community">Communities</Link>
-      <Link to="/service"><button
-className="inline-flex h-9 items-center justify-center rounded-md bg-pink-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-pink-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pink-700 disabled:pointer-events-none disabled:opacity-50 dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus-visible:ring-violet-600">
-        Try now
-    </button></Link>
+      <Link to="/service">
+        <button
+          className="inline-flex h-9 items-center justify-center rounded-md bg-pink-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-pink-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pink-700 disabled:pointer-events-none disabled:opacity-50 dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus-visible:ring-violet-600"
+        >
+          Try now
+        </button>
+      </Link>
     </div>
   );
 };
@@ -95,8 +78,7 @@ const MenuLink = ({ text }: { text: string }) => {
       href="#"
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
-      <motion.span variants={menuLinkArrowVariants}>
-      </motion.span>
+      <motion.span variants={menuLinkArrowVariants}></motion.span>
       <motion.div>
         <span className="flex items-center h-[30px] text-gray-500">{text}</span>
         <span className="flex items-center h-[30px] text-indigo-600">
