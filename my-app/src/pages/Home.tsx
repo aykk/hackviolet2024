@@ -1,4 +1,5 @@
-import Hero2 from '../components/Hero2';
+import Hero from '../components/Hero';
+import Mission from '../components/Mission';
 import Navbar from '../components/Navbar';
 
 function Home() {
@@ -6,7 +7,8 @@ function Home() {
     <div>
       <Navbar />
         <main>
-            <Hero2 />
+            <Hero />
+            <Mission />
         </main>
     </div>
   );

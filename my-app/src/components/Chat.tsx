@@ -1,10 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/qi9nBXehQvN
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-
-export default function Component() {
+export default function Chat() {
   return (
     <section className="w-full h-screen flex flex-col items-center justify-center bg-gradient-to-r from-pink-200 to-pink-400 dark:from-red-600 dark:to-red-800">
       <div className="flex justify-center items-center w-full h-full">
@@ -26,7 +20,7 @@ export default function Component() {
             WelcomeHER
           </h1>
           <p className="mt-2 text-lg md:text-xl text-center text-gray-700 dark:text-gray-300 mb-8">
-            Moving from another country? Figure out what you need to know.
+            Please answer these simple questions to get started!
           </p>
           <div className="mt-4 w-full">
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" htmlFor="country">

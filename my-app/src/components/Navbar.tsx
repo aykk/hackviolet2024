@@ -13,14 +13,14 @@ const FlipNavWrapper = () => {
 };
 
 const FlipNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <nav className="bg-white p-4 border-b-[1px] border-gray-200 flex items-center justify-center relative">
-      <NavLeft setIsOpen={setIsOpen} />
-      <NavMenu isOpen={isOpen} />
-    </nav>
-  );
-};
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+      <nav className="bg-pink-200 p-4 border-gray-200 flex items-center justify-center relative">
+        <NavLeft setIsOpen={setIsOpen} />
+        <NavMenu isOpen={isOpen} />
+      </nav>
+    );
+  };  
 
 const Logo = () => {
   // Temp logo from https://logoipsum.com/
@@ -59,29 +59,16 @@ const NavLeft = ({
       >
         <FiMenu />
      </motion.button>
-      <Logo />
-      <NavLink text="About Us" />
-      <NavLink text="Legal" />
-      <NavLink text="Culture" />
-      <NavLink text="Community" />
+     <Link to="/"><Logo /></Link>
+      <Link to="/aboutus">About Us</Link>
+      <Link to="/legal">Legal</Link>
+      <Link to="/culture">Culture</Link>
+      <Link to="/community">Community</Link>
+      <Link to="/service"><button
+className="inline-flex h-9 items-center justify-center rounded-md bg-pink-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-pink-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pink-700 disabled:pointer-events-none disabled:opacity-50 dark:bg-violet-500 dark:hover:bg-violet-600 dark:focus-visible:ring-violet-600">
+        Try now
+    </button></Link>
     </div>
-  );
-};
-
-const NavLink = ({ text }: { text: string }) => {
-  return (
-    <a
-      href="/"
-      rel="nofollow"
-      className="hidden lg:block h-[30px] overflow-hidden font-medium"
-    >
-      <motion.div>
-        <span className="flex items-center h-[30px] text-gray-500">{text}</span>
-        <span className="flex items-center h-[30px] text-indigo-600">
-          {text}
-        </span>
-      </motion.div>
-    </a>
   );
 };
 
