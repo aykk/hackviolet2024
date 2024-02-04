@@ -164,7 +164,7 @@ const Service2 = () => {
       try {
         const openAI = new OpenAIResponse();
         const prompt = `You are an assistant going to explain the key differences between ${location.state.country}
-         and the United States in terms of the most jarring social and cultural differences in the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
+         and the United States in terms of the most jarring social and cultural differences, translated to the language of ${location.state.language} please be specific yet concise to 2 sentences max`;
 
         await openAI.fetchData(prompt);
         const generatedString = openAI.getResponse();
