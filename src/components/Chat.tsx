@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Chat = () => {
   const [selectedCountry, setSelectedCountry] = useState('');
@@ -8,7 +8,7 @@ const Chat = () => {
 
   const handleGoButtonClick = () => {
     if (selectedCountry && selectedLanguage) {
-      navigate('../pages/Service2', {
+      navigate('/response', {
         state: {
           country: selectedCountry,
           language: selectedLanguage,
