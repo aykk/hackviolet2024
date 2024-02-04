@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 
-function Legal() {
+function Resources() {
   return (
     <div>
       <Navbar />
@@ -8,4 +8,4 @@ function Legal() {
   );
 }
 
-export default Legal;
+export default Resources;

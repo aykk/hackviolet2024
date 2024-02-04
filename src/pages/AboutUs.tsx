@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 
-function Culture() {
+function AboutUs() {
   return (
     <div>
       <Navbar />
@@ -8,4 +8,4 @@ function Culture() {
   );
 }
 
-export default Culture;
+export default AboutUs;
