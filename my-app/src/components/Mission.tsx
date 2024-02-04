@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
-import OpenAIResponse from '../Response';
+// import OpenAIResponse from '../Response';
 
 
 interface QuestionProps {
@@ -38,7 +38,6 @@ const Mission: React.FC = () => {
         </Question>
         <Question title="What are our future goals?" isOpen={openQuestion === 2} onToggle={() => handleQuestionToggle(2)}>
           <p>
-            {openAIResponse}
           </p>
         </Question>
         <Question title="Hi, how are you?" isOpen={openQuestion === 3} onToggle={() => handleQuestionToggle(3)}>
