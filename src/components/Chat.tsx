@@ -8,7 +8,7 @@ export default function Chat() {
         </div>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg transform">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-pink-500 dark:text-yellow-300 mb-6">
-            Welcome to ELLIS!
+            Chat with ELLIS!
           </h1>
           <p className="mt-2 text-lg md:text-xl text-center text-gray-700 dark:text-gray-300 mb-8">
             Please answer these simple questions to get started!

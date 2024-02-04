@@ -7,7 +7,7 @@ const Component: React.FC = () => {
   };
 
   return (
-    <section className="relative w-screen h-[120vh] flex items-center justify-center bg-gradient-to-b from-pink-200 via-pink-300 to-pink-200">
+    <section className="relative w-screen h-[120vh] flex items-center justify-center bg-gradient-to-b from-pink-200 via-[#f294be] to-pink-200">
       <div className="container px-4 md:px-6 flex flex-col items-center space-y-4 text-center -mt-[60vh] relative z-10">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold tracking-tighter text-pink-700 dark:text-violet-200 sm:text-4xl md:text-5xl lg:text-6xl/none">
