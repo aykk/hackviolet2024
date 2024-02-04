@@ -1,8 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import styled from 'styled-components';
 import OpenAIResponse from '../Response';
 import { useLocation } from 'react-router-dom';
 
+const MyComponent = styled.div`
+  color: #4A5568;
+  font-size: 17px;
+`;
+
+const Container = styled.div`
+  background-color: #fbcfe8; 
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; 
+`;
+
+const ResponseContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+`;
+
+const ResponseItem = styled.h2`
+  margin-bottom: 8px;
+  border-bottom: 10px solid #F48FB1; 
+  border-bottom: 3px solid #E2E8F0; 
+  padding-bottom: 8px;
+`;
+
+const LeftContainer = styled.div`
+  flex: 1;
+  background-color: #F48FB1; 
+  border-radius: 15px;
+  padding: 15px;
+  margin-right: 10px;
+`;
+
+const RightContainer = styled.div`
+  flex: 1;
+  background-color: #F48FB1; 
+  border-radius: 15px;
+  padding: 15px;
+  margin-left: 10px;
+`;
 
 const Service2 = () => {
   const [openAIResponseWR, setOpenAIResponse] = useState<string | undefined>(undefined);
@@ -141,37 +186,27 @@ const Service2 = () => {
 
   return (
     <div>
+      <MyComponent>
+      <Container>
       <Navbar />
-      <h1>Legal!</h1>
-
-      <h2>
-        {openAIResponseWR}
-      </h2>
-      <h2>
-        {openAIResponseIM}
-      </h2>
-      <h2>
-        {openAIResponseEM}
-      </h2>
-      <h2>
-        {openAIResponseGN}
-      </h2>
-
-
-
-      <h1>Cultural!</h1>
-      <h2>
-        {openAIResponseGR}
-      </h2>
-      <h2>
-        {openAIResponseFM}
-      </h2>
-      <h2>
-        {openAIResponseWK}
-      </h2>
-      <h2>
-        {openAIResponseSC}
-      </h2>
+      <ResponseContainer>
+      <LeftContainer>
+      <h1 style={{ fontWeight: 'bold', fontSize: '24px' }}>Legal Differences ⚖️</h1>
+        <ResponseItem>- {openAIResponseWR}</ResponseItem>
+        <ResponseItem>- {openAIResponseIM}</ResponseItem>
+        <ResponseItem>- {openAIResponseEM}</ResponseItem>
+        <ResponseItem>- {openAIResponseGN}</ResponseItem>
+      </LeftContainer>
+      <RightContainer>
+      <h1 style={{ fontWeight: 'bold', fontSize: '24px' }}>Cultural Differences 👥</h1>
+        <ResponseItem>- {openAIResponseGR}</ResponseItem>
+        <ResponseItem>- {openAIResponseFM}</ResponseItem>
+        <ResponseItem>- {openAIResponseWK}</ResponseItem>
+        <ResponseItem>- {openAIResponseSC}</ResponseItem>
+      </RightContainer>
+      </ResponseContainer>
+      </Container>
+      </MyComponent>
     </div>
   );
 };
